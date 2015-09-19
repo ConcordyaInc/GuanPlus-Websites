@@ -501,8 +501,8 @@ vertical-alignment
 
             .container-image {
                 margin-top: 5%;
-                width: 230px;
-                height: auto;
+                width: auto;
+                height: 150px;
             }
         }
     }
@@ -531,12 +531,42 @@ in order to easier position style
     .left_wrap {
         width: 40%; //responsive
         padding-right: 50px; //responsive
+        .hat {
+            height: 400px;
+            width: auto;
+        }
     }
 
     .right_wrap {
         width: 60%; //responsive
         > * {
             display: block;
+        }
+
+        .message-container {
+            color: @main-color;
+            font-size: 30px;
+            margin-top: 30px;
+
+            .message-v2 {
+                color: white;
+                float: left;
+            }
+
+            .icon-right-circled2{
+                font-size:35px;
+            }
+
+            a {
+                color: @main-color;
+
+                &:hover {
+                    color: @main-color-darker;
+                }
+            }
+        }
+
+        div {
         }
 
         .title {
@@ -594,12 +624,13 @@ in order to easier position style
     background-position: center right;
     background-size: 100% 100%;
 
-    .phone{
-        img{
-        height:400px;
-        width:auto;
+    .phone {
+        img {
+            height: 400px;
+            width: auto;
         }
     }
+
     .qrcode-dialog {
         border-radius: 5px;
         background-color: white;
@@ -692,10 +723,12 @@ in order to easier position style
         > * {
             display: block;
             text-align: right;
-            a{
-                color:@main-color;
-                &:hover{
-                    color:@main-color-darker;
+
+            a {
+                color: @main-color;
+
+                &:hover {
+                    color: @main-color-darker;
                 }
             }
         }
@@ -1138,8 +1171,9 @@ in order to easier position style
 
     a {
         color: @main-color-darker;
-        &:hover{
-            color:  @main-color;
+
+        &:hover {
+            color: @main-color;
         }
     }
 
