@@ -250,7 +250,9 @@
             web.showElement($('.qrcode-dialog'), true);
         });
         
-
+        $('.icon-down-open').on('click', function () {
+            $.fn.fullpage.moveTo(2, 0);
+        })
         
         
         /* #FEEL CLICK EVENT*/
