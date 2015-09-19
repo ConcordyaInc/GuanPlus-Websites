@@ -13,6 +13,7 @@
 	<%- include ../tpl/nav %>
 	<div id="fullpage">
 		<div class="section " id="section0" data-anchor="first">
+			<div class="top-bar">
 			<div class="slide" id="slide1">
 				<div class="wrap v_align">
 					<div class="block_wrap left_wrap">
@@ -24,6 +25,39 @@
 					</div>
 				</div>
 			</div>
+			<div class="slide" id="slide5">
+				<div class="wrap v_align">
+					<div class="qrcode-dialog">
+						<div class="qr-area" >
+							<img class="qr" src="<%= url %>/assets/s5-qrcode.png" alt="guan plus QR"/>
+						</div>
+						<div class="qr-message">
+							<div class="icon"></div>
+							<div class="message">
+								<div>扫一扫二维码</div>
+								<div>下载管＋安卓客户端</div>
+							</div>
+						</div>
+						<div class="close"><i class="icon-cancel"></i></div>
+					</div>
+					<div class="block_wrap left_wrap">
+						<div class="phone"><img src="<%= url %>/assets/s5-phone.png" alt="subtitle"/></div>
+					</div>
+					<div class="block_wrap right_wrap">
+						<div class="guanplus_logo bg">
+							<img src="<%= url %>/assets/s5_logo.png" alt="star"/>
+						</div>
+						<div>
+							<div>移动报销，自由随心</div>
+							<div>第一时间推送消息，全程跟踪财务信息</div>
+							<div>您的贴身财务管家</div>
+							<div><a href="#section-one">随手记</a>、<a href="#section-two">随手审</a>、<a href="#section-three">随手出</a>、<a href="#section-four">随手控</a></div>
+							<div class="android"><i class="icon-android"></i>Android</div>
+						</div>
+						
+					</div>
+				</div>
+    		</div>
     		<div class="slide" id="slide2">
 				<div class="wrap v_align">
 					<div class="block_wrap left_wrap">
@@ -71,18 +105,20 @@
 					<div class="mask_bl bg"></div>
 				</div> 
     		</div>
-    		<div class="slide" id="slide4">
- 				<div class="mask"></div>
-    			<div class="wrap">
-    				<div class="release_wrap">
-    					<img class="release" src="<%= url %>/assets/s4_title.png" alt="release"/>
-    					<img class="link" src="<%= url %>/assets/link.png"></img>
-    					<span id="feel">欢迎体验</span>
-    				</div>
-    			</div>
     		</div>
+			<div class="bottom-bar">
+				<div class="container3"> 
+					<div class="container2" >
+						<div class="container1">
+							<div class="left"><img src="<%= url %>/assets/bottom-bar-left.png" alt="youth" class="container-image"/></div>
+							<div class="center"><img src="<%= url %>/assets/bottom-bar-center.png" alt="youth" class="container-image"/></div>
+							<div class="right"><img id="mobile-app" src="<%= url %>/assets/bottom-bar-right.png" alt="youth" class="container-image"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="section features odd" id="section1">
+		<div class="section features odd" id="section1" data-anchor="section-one">
 			<div id="feature-suishouji-bg" class="feature-icon-bg"></div>
 			<div class="wrap v_align">
 				<div class="block_wrap left_wrap">
@@ -106,13 +142,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="section features even" id="section2">
+		<div class="section features even" id="section2" data-anchor="section-two">
 			<div id="feature-suishoushen-bg" class="feature-icon-bg"></div>
 			<div class="wrap v_align">
 				<div class="intro block_wrap left_wrap">
 					<h1>随&nbsp;手&nbsp;审</h1>
 					<h2>线上报销 实时审批</h2>
 					<p>随时随地生成报销单，告别回忆式报销之苦<br />随时随地审批企业各项审批事项</p>
+					<p><a id="section2-mobile-app" href="#">手机端下载地址</a></p>
 				</div>
 				<div class="block_wrap right_wrap">
 					<div class="pic">
@@ -130,7 +167,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section features odd" id="section3">
+		<div class="section features odd" id="section3" data-anchor="section-three">
 			<div id="feature-suishouchu-bg" class="feature-icon-bg"></div>
 			<div class="wrap v_align">
 				<div class="block_wrap left_wrap">
@@ -150,16 +187,18 @@
 					<h1>随&nbsp;手&nbsp;出</h1>
 					<h2>实时凭证 自动帐表</h2>
 					<p>业务数据自动实时生成会计凭证、总账明细账<br />自动及时得到各种财务报表、管理报表</p>
+					<p><a href="https://app.guanplus.com/#/register">欢迎体验</a></p>
 				</div>
 			</div>
 		</div>
-		<div class="section features even" id="section4">
+		<div class="section features even" id="section4" data-anchor="section-four">
 			<div id="feature-suishoukong-bg" class="feature-icon-bg"></div>
 			<div class="wrap v_align">
 				<div class="intro block_wrap left_wrap">
 					<h1>随&nbsp;手&nbsp;控</h1>
 					<h2>数据说话 专业分析</h2>
 					<p>实时得到财务、业务各项分析<br/>轻轻掌握企业经营与发展</p>
+					<p><a href="https://app.guanplus.com/#/register">欢迎体验</a></p>
 				</div>
 				<div class="block_wrap right_wrap">
 					<div class="pic control">
